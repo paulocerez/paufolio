@@ -5,6 +5,7 @@ import SpotifyPlaylist from "./_components/spotifyembed";
 import Phone from "./_components/iPhone";
 import { Footer } from "./_components/footer";
 import { Socials } from "./_components/socials";
+import { ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,10 +36,22 @@ export default function Home() {
               <Cardlist />
             </ul>
           </div>
-          <div className="socials flex flex-col w-full">
-            <h1 className="heading p-10">Socials</h1>
-            <Socials />
-            <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
+          <div className="flex flex-col w-full">
+            <h1 className="heading p-10">About me</h1>
+          </div>
+          <div className="flex flex-col items-center justify-center"></div>
+        </div>
+        <div className=" flex flex-col items-center space-y-12">
+          <Socials />
+          <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
+          <div className="flex flex-row space-x-2 items-center justify-center">
+            <ExternalLink />
+            <Link
+              href="https://tailwindcss.com/docs/width"
+              className="hover:underline"
+            >
+              Download CV
+            </Link>
           </div>
         </div>
       </main>

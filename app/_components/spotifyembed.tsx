@@ -1,22 +1,21 @@
 import React from "react";
 
-interface SpotifyPlaylistProps extends React.HTMLProps<HTMLIFrameElement> {
+interface SpotifyPlaylistProps {
   src: string;
 }
 
-const SpotifyPlaylist: React.FC<SpotifyPlaylistProps> = ({ src, ...rest }) => {
+const SpotifyPlaylist: React.FC<SpotifyPlaylistProps> = ({ src }) => {
   return (
-    <div className="sticky">
+    <div className="w-1/2">
       <iframe
         style={{ borderRadius: "12px" }}
         src={src}
         width="100%"
-        height={352}
+        height={152}
         frameBorder={0}
-        allowFullScreen={true}
+        allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-        {...rest}
       ></iframe>
     </div>
   );
