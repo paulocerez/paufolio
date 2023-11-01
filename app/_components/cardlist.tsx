@@ -63,7 +63,7 @@ export const Cardlist = () => {
     <div className="flex flex-col space-y-10">
       {projects.map((project: Project) => (
         <li key={project.id}>
-          <div className="bg-zinc-800 block rounded-xl max-w-md">
+          <div className="bg-zinc-800 block rounded-xl">
             <Link href={project.domain}>
               <div className="flex flex-col space-y-4 description text-left p-10">
                 <h1 className="font-semibold text-2xl hover:underline">
