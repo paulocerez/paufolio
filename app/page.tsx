@@ -7,11 +7,12 @@ import { Footer } from "./_components/footer";
 import { Socials } from "./_components/socials";
 import { ExternalLink } from "lucide-react";
 import Loom from "./_components/loom";
+import { ModeToggle } from "./_components/modetoggle";
 
 export default function Home() {
   return (
     <div className="min-h-screen text-center">
-      <main className="flex flex-col p-24 items-center justify-center space-y-20">
+      <main className="flex flex-col p-24 items-center justify-center space-y-16">
         <div className="header flex flex-col space-y-20 justify-between max-w-xl">
           <div className="name-and-intro text-justify">
             <h1 className="heading text-center my-8">Paulo Ramirez</h1>
@@ -49,6 +50,7 @@ export default function Home() {
             </Link>
           </div>
           <Socials />
+          <h1>Here&apos;s the playlist for your next home party ;)</h1>
           <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
         </div>
         <Footer />
