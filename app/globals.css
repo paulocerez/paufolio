@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base allows to define styles for the CSS base layer -> global styles around all components */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0% 90%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -66,15 +67,20 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 155, 255, 255;
-    --background-start-rgb: 240, 240, 240; /* Slightly darker than white background */
-    --background-end-rgb: 240, 240, 240;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 155, 255, 255;
+    --background-start-rgb: 240, 240, 240;
+    --background-end-rgb: 220, 220, 220;
+  }
+}
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -82,7 +88,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 .heading {
   font-size: 2.25rem;

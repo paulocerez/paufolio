@@ -12,10 +12,10 @@ import { ModeToggle } from "./_components/modetoggle";
 export default function Home() {
   return (
     <div className="min-h-screen text-center">
-      <main className="flex flex-col sm:p-24 items-center justify-center space-y-16 px-6">
+      <main className="flex flex-col sm:p-24 items-center justify-center space-y-6 px-6">
         <div className="header flex flex-col space-y-10 max-w-xl my-10">
           <ModeToggle />
-          <div className="name-and-intro text-justifypx-20">
+          <div className="name-and-intro text-justify sm:px-6">
             <h1 className="heading text-center">Paulo Ramirez</h1>
             <p className="leading-8 p-6 max-w-xl text-justify">
               Welcome to my personal portfolio. 👋🏼 I&apos;m a Software
