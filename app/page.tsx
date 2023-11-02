@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex flex-row space-x-2 items-center justify-center py-4">
             <ExternalLink />
             <Link
-              href="https://tailwindcss.com/docs/width"
+              href="https://drive.google.com/file/d/1hoVClk71qvxUpJRohT6Wyq6ssWn9V7-2/view?usp=drive_link"
               className="hover:underline"
             >
               Download CV
