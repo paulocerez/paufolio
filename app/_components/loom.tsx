@@ -2,19 +2,18 @@ import React from "react";
 
 const Loom: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <iframe
-        src="https://www.loom.com/embed/b583d07ec9d9454bbb142b46d7e3e4e2?sid=87b072e4-f294-4dec-bfc8-a114d62f0c68?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
-        frameBorder="0"
-        allowFullScreen
-        style={{
-          width: "576px",
-          height: "324px",
-          borderRadius: "12px",
-          border: "solid white",
-        }}
-      ></iframe>
-    </div>
+    <iframe
+      src="https://www.loom.com/embed/031d1345fe0545e182b4658d02af48d6?sid=0d7222b3-6baf-4b93-bb2d-beb85e250421?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+      frameBorder="0"
+      allowFullScreen
+      style={{
+        borderRadius: "12px",
+        border: "solid white",
+      }}
+      width={576}
+      height={324}
+      id="loom"
+    ></iframe>
   );
 };
 

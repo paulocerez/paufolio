@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export const Socials = () => {
   return (
-    <div className="flex flex-row justify-center items-center space-x-8">
+    <div className="flex flex-col sm:flex-row justify-center mx-auto sm:items-center sm:space-x-10 space-y-5 sm:space-y-0">
       <div className="linkedin flex flex-row space-x-4">
         <Linkedin />
         <Link
