@@ -51,8 +51,8 @@ export const Cardlist = () => {
     {
       id: 3,
       name: "Paufolio - this website 👀",
-      domain: "https://matchdays.app",
-      technologies: ["TypeScript, ", "Next.js, ", "tRPC, ", "Tailwind "],
+      domain: "https://github.com/paulocerez/paufolio.git",
+      technologies: ["TypeScript, ", "Next.js, ", "Tailwind "],
       description:
         "This is *surprise* *surprise*: the website you are currently on, which serves as my personal portfolio. I thought this joke with my name would be cool, but that didn't convince me enough to buy the domain...",
       backgroundColor: "bg-slate-500",

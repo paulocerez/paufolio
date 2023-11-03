@@ -105,9 +105,11 @@
 }
 
 @media (max-width: 768px) {
-  #loom,
+  #loom {
+    height: 155px;
+    width: 100%;
+  }
   iframe {
     width: 100%;
-    height: 209px;
   }
 }
