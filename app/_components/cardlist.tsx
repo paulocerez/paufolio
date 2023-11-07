@@ -18,7 +18,7 @@ export const Cardlist = () => {
     {
       id: 1,
       name: "rememberry 🫐",
-      domain: "https://rememberry.io",
+      domain: "https://github.com/rememberry-io/rememberry",
       technologies: ["TypeScript, ", "Next.js, ", "tRPC, ", "Tailwind "],
       description:
         "rememberry is a web app that allows students to craft flashcard-based mind-maps to make their materials more engaging and abstract concepts more tangible.",
@@ -30,7 +30,7 @@ export const Cardlist = () => {
     {
       id: 2,
       name: "Matchdays ⚽️",
-      domain: "https://matchdays.app",
+      domain: "https://github.com/paulocerez/matchdays",
       technologies: [
         "TypeScript, ",
         "T3-stack, ",
