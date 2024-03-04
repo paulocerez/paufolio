@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Cardlist } from "./_components/cardlist";
-import SpotifyPlaylist from "./_components/spotifyembed";
-import Phone from "./_components/iPhone";
+import { Cardlist } from "./_components/CardList";
+import SpotifyPlaylist from "./_components/SpotifyEmbed";
 import { Footer } from "./_components/footer";
-import { Socials } from "./_components/socials";
+import { Socials } from "./_components/Socials";
 import { ExternalLink } from "lucide-react";
-import Loom from "./_components/loom";
-import { ModeToggle } from "./_components/modetoggle";
+import Loom from "./_components/Loom";
+import { ModeToggle } from "./_components/Modetoggle";
 
 export default function Home() {
   return (
@@ -38,17 +37,12 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className=" flex flex-col space-y-8">
+        <div>
           <div className="flex flex-row space-x-2 items-center justify-center py-4">
-            <ExternalLink />
-            <Link
-              href="https://drive.google.com/file/d/1jvJytwgH2wCgm3NNnFAGGb0aPZ68rPOY/view?usp=sharing"
-              className="hover:underline"
-            >
-              Download CV
-            </Link>
+            <Socials />
           </div>
-          <Socials />
+        </div>
+        <div className=" flex flex-col space-y-8">
           <h1 className="p-8 leading-8">
             It&apos;s recommended to turn this playlist on while looking through
             the projects ;)

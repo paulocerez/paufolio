@@ -22,27 +22,18 @@ export const Socials = () => {
         </Link>
       </div>
       <div className="github flex flex-row space-x-4">
+        <ExternalLink />
+        <Link
+          href="https://drive.google.com/file/d/1jvJytwgH2wCgm3NNnFAGGb0aPZ68rPOY/view?usp=sharing"
+          className="hover:underline"
+        >
+          Download CV
+        </Link>
+      </div>
+      <div className="github flex flex-row space-x-4">
         <Github />
         <Link href="https://github.com/paulocerez" className="hover:underline">
           GitHub
-        </Link>
-      </div>
-      <div className="instagram flex flex-row space-x-4">
-        <Instagram />
-        <Link
-          href="https://www.instagram.com/paulocerez/"
-          className="hover:underline"
-        >
-          Gram
-        </Link>
-      </div>
-      <div className="spotify flex flex-row space-x-4">
-        <Headphones />
-        <Link
-          href="https://open.spotify.com/user/paulocedenos?si=c2c0fa5e37b34b32"
-          className="hover:underline"
-        >
-          Spotify
         </Link>
       </div>
     </div>

@@ -4,9 +4,10 @@ import Link from "next/link";
 export const Cardlist = () => {
   interface Project {
     id: number;
+    icon: string;
     name: string;
     domain: string;
-    technologies: [];
+    technologies: string[];
     description: string;
     backgroundColor: string;
     textColor: string;
@@ -14,12 +15,31 @@ export const Cardlist = () => {
     borderColor: string;
   }
 
-  const projects: any = [
+  const projects: Project[] = [
     {
       id: 1,
-      name: "rememberry 🫐",
+      icon: "",
+      name: "LANCH Partner Dashboard",
+      domain: "https://partner.lanch.com/login",
+      technologies: [
+        "Next.js (TypeScript)",
+        "TailwindCSS",
+        "Apollo Client (GraphQL)",
+        "Hasura (BigQuery)",
+      ],
+      description:
+        "The LANCH Partner Dashboard is an internal application for LANCH's 80+ gastronomy partners to track their performance analytics. Currently the app has 50+ users (around 10 DAU).",
+      backgroundColor: "bg-slate-500",
+      headerColor: "text-white",
+      textColor: "text-white",
+      borderColor: "border-blue-500",
+    },
+    {
+      id: 2,
+      icon: "",
+      name: "rememberry",
       domain: "https://github.com/rememberry-io/rememberry",
-      technologies: ["TypeScript, ", "Next.js, ", "tRPC, ", "Tailwind "],
+      technologies: ["Next.js (TypeScript)", "tRPC", "TailwindCSS"],
       description:
         "rememberry is a web app that allows students to craft flashcard-based mind-maps to make their materials more engaging and abstract concepts more tangible.",
       backgroundColor: "bg-white",
@@ -28,18 +48,17 @@ export const Cardlist = () => {
       borderColor: "shadow-2xl",
     },
     {
-      id: 2,
-      name: "Matchdays ⚽️",
+      id: 3,
+      icon: "",
+      name: "Matchdays",
       domain: "https://github.com/paulocerez/matchdays",
       technologies: [
-        "TypeScript, ",
-        "T3-stack, ",
-        "Postgres, ",
-        "Prisma, ",
-        "NextAuth, ",
-        "Axios, ",
-        "GCal API, ",
-        "Docker ",
+        "Next.js (TypeScript)",
+        "Postgres",
+        "NextAuth",
+        "Axios",
+        "Cheerio",
+        "GCal API",
       ],
       description:
         "Matchdays is a web app that allows sports fans to automatically integrate your favorite football clubs' matchdays into your Google Calendar, thereby eliminating the need to do that manually.",
@@ -48,32 +67,45 @@ export const Cardlist = () => {
       textColor: "text-white",
       borderColor: "border-blue-500",
     },
-    {
-      id: 3,
-      name: "Paufolio - this website 👀",
-      domain: "https://github.com/paulocerez/paufolio.git",
-      technologies: ["TypeScript, ", "Next.js, ", "Tailwind "],
-      description:
-        "This is *surprise* *surprise*: the website you are currently on, which serves as my personal portfolio. I thought this joke with my name would be cool, but that didn't convince me enough to buy the domain...",
-      backgroundColor: "bg-slate-500",
-      headerColor: "text-white",
-      textColor: "text-white",
-      borderColor: "border-blue-500",
-    },
+    // {
+    //   id: 4,
+    //   name: "Paufolio - this website 👀",
+    //   domain: "https://github.com/paulocerez/paufolio.git",
+    //   technologies: ["Next.js (TypeScript)", "TailwindCSS"],
+    //   description:
+    //     "This is *surprise* *surprise*: the website you are currently on, which serves as my personal portfolio. I thought this joke with my name would be cool, but that didn't convince me enough to buy the domain...",
+    //   backgroundColor: "bg-slate-500",
+    //   headerColor: "text-white",
+    //   textColor: "text-white",
+    //   borderColor: "border-blue-500",
+    // },
 
+    // {
+    //   id: 5,
+    //   name: "Thoughts 💭",
+    //   domain: "https://github.com/paulocerez/thoughts-web",
+    //   technologies: [
+    //     "Vue.js",
+    //     "TypeScript",
+    //     "Postgres",
+    //     "TailwindCSS",
+    //     "Axios",
+    //   ],
+    //   description:
+    //     "Thoughts is a small web application to capture your everyday thoughts, you can think of an online diary.",
+    //   backgroundColor: "bg-black",
+    //   headerColor: "text-blue-500",
+    //   textColor: "text-white",
+    //   borderColor: "border-2 border-white",
+    // },
     {
-      id: 4,
-      name: "Thoughts 💭",
-      domain: "https://github.com/paulocerez/thoughts-web",
-      technologies: [
-        "Vue.js, ",
-        "TypeScript, ",
-        "Postgres, ",
-        "Tailwind, ",
-        "Axios",
-      ],
+      id: 6,
+      icon: "",
+      name: "LANCH Tier 1-2-3-4 Analysis",
+      domain: "https://github.com/paulocerez/lanch-order-analyses-tiers.git",
+      technologies: ["Python", "Pandas", "Matplotlib", "Google Looker Studio"],
       description:
-        "Thoughts is a small web application to capture your everyday thoughts, you can think of an online diary.",
+        "Conducted an analysis of 200.000+ food orders and clustered the respective regions to draw conclusions about partner performance depending on city size of operations.",
       backgroundColor: "bg-black",
       headerColor: "text-blue-500",
       textColor: "text-white",
@@ -81,30 +113,31 @@ export const Cardlist = () => {
     },
   ];
   return (
-    <div className="flex flex-col space-y-16 sm:space-y-10 sm:px-0">
-      {projects.map((project: Project) => (
-        <li key={project.id}>
-          <div
-            className={`block rounded-xl ${project.backgroundColor} ${project.borderColor}`}
-          >
-            <Link href={project.domain}>
-              <div className="flex flex-col space-y-4 description text-left p-10">
-                <h1
-                  className={`font-semibold text-center sm:text-left text-2xl hover:underline ${project.headerColor}`}
-                >
-                  {project.name}
-                </h1>
-                <h2 className={`text-justify ${project.textColor}`}>
-                  {project.technologies}
-                </h2>
-                <p className={`text-justify ${project.textColor}`}>
-                  {project.description}
-                </p>
-              </div>
-            </Link>
-          </div>
-        </li>
-      ))}
+    <div>
+      <ul className="flex flex-col space-y-16 sm:space-y-10 sm:px-0">
+        {projects.map((project: Project) => (
+          <li key={project.id}>
+            <div className="block rounded-xl shadow-2xl">
+              <Link href={project.domain}>
+                <div className="flex flex-col space-y-4 description text-left p-10">
+                  <h1 className="font-semibold text-center sm:text-left text-2xl hover:underline">
+                    {project.name}
+                  </h1>
+                  <h2 className="text-justify">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index}>
+                        {tech}
+                        {index < project.technologies.length - 1 ? ", " : ""}
+                      </span>
+                    ))}
+                  </h2>
+                  <p className="text-justify">{project.description}</p>
+                </div>
+              </Link>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
