@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  ExternalLink,
-  Instagram,
-  Linkedin,
-  Github,
-  Headphones,
-} from "lucide-react";
-import Image from "next/image";
+import { ExternalLink, Linkedin, Github } from "lucide-react";
 import Link from "next/link";
 
-export const Socials = () => {
+const Socials = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-center mx-auto sm:items-center sm:space-x-10 space-y-5 sm:space-y-0">
       <div className="linkedin flex flex-row space-x-4">
@@ -39,3 +32,5 @@ export const Socials = () => {
     </div>
   );
 };
+
+export default Socials;

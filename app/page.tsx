@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Cardlist } from "@/app/_components/CardList";
+import Cardlist from "@/app/_components/CardList";
 import SpotifyPlaylist from "@/app/_components/SpotifyEmbed";
-import { Footer } from "@/app/_components/footer";
-import { Socials } from "@/app/_components/Socials";
-import { ExternalLink } from "lucide-react";
+import Footer from "@/app/_components/footer";
+import Socials from "@/app/_components/Socials";
 import Loom from "@/app/_components/Loom";
-import { ModeToggle } from "@/app/_components/Modetoggle";
+import ModeToggle from "@/app/_components/Modetoggle";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export const Cardlist = () => {
+const Cardlist = () => {
   interface Project {
     id: number;
     icon: string;
@@ -141,3 +141,5 @@ export const Cardlist = () => {
     </div>
   );
 };
+
+export default Cardlist;
