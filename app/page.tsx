@@ -1,9 +1,9 @@
-import Cardlist from "./_components/CardList";
-import SpotifyPlaylist from "./_components/SpotifyEmbed";
-import Footer from "./_components/footer";
-import Socials from "./_components/Socials";
-import Loom from "./_components/Loom";
-import ModeToggle from "./_components/ModeToggle";
+import Cardlist from "./(components)/CardList";
+import SpotifyPlaylist from "./(components)/SpotifyEmbed";
+import Footer from "./(components)/footer";
+import Socials from "./(components)/Socials";
+import Loom from "./(components)/Loom";
+import ModeToggle from "./(components)/ModeToggle";
 
 export default function Home() {
   return (
