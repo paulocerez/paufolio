@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import Cardlist from "@/app/_components/CardList";
-import SpotifyPlaylist from "@/app/_components/SpotifyEmbed";
-import Footer from "@/app/_components/footer";
-import Socials from "@/app/_components/Socials";
-import Loom from "@/app/_components/Loom";
-import ModeToggle from "@/app/_components/Modetoggle";
+import Cardlist from "./_components/CardList";
+import SpotifyPlaylist from "./_components/SpotifyEmbed";
+import Footer from "./_components/footer";
+import Socials from "./_components/Socials";
+import Loom from "./_components/Loom";
+import ModeToggle from "./_components/ModeToggle";
 
 export default function Home() {
   return (
