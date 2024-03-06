@@ -90,12 +90,6 @@
     rgb(var(--background-start-rgb));
 } */
 
-.heading {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 500;
-}
-
 .intro-card {
   display: flex;
   flex-direction: column;
@@ -106,7 +100,7 @@
 
 @media (max-width: 768px) {
   #loom {
-    height: 155px;
+    /* height: 155px; */
     width: 100%;
   }
   iframe {

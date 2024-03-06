@@ -9,6 +9,7 @@ const Loom: React.FC = () => {
       style={{
         borderRadius: "12px",
         border: "solid white",
+        maxWidth: "100%",
       }}
       width={576}
       height={324}

@@ -1,10 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import Link from "next/link";
+import {
+  Brain,
+  Search,
+  LayoutDashboard,
+  Trophy,
+  FileText,
+  LucideIcon,
+} from "lucide-react";
 
-const Cardlist = () => {
+const icons = {
+  Brain: <Brain />,
+  Search: <Search />,
+  LayoutDashboard: <LayoutDashboard />,
+  Trophy: <Trophy />,
+  FileText: <FileText />,
+};
+
+const CardList = () => {
   interface Project {
     id: number;
-    icon: string;
+    icon: LucideIcon;
     name: string;
     domain: string;
     technologies: string[];
@@ -18,7 +34,7 @@ const Cardlist = () => {
   const projects: Project[] = [
     {
       id: 1,
-      icon: "",
+      icon: LayoutDashboard,
       name: "LANCH Partner Dashboard",
       domain: "https://partner.lanch.com/login",
       technologies: [
@@ -36,7 +52,7 @@ const Cardlist = () => {
     },
     {
       id: 2,
-      icon: "",
+      icon: Brain,
       name: "rememberry",
       domain: "https://github.com/rememberry-io/rememberry",
       technologies: ["Next.js (TypeScript)", "tRPC", "TailwindCSS"],
@@ -47,9 +63,10 @@ const Cardlist = () => {
       textColor: "text-black",
       borderColor: "shadow-2xl",
     },
+
     {
       id: 3,
-      icon: "",
+      icon: Trophy,
       name: "Matchdays",
       domain: "https://github.com/paulocerez/matchdays",
       technologies: [
@@ -100,12 +117,25 @@ const Cardlist = () => {
     // },
     {
       id: 6,
-      icon: "",
+      icon: Search,
       name: "LANCH Tier 1-2-3-4 Analysis",
       domain: "https://github.com/paulocerez/lanch-order-analyses-tiers.git",
       technologies: ["Python", "Pandas", "Matplotlib", "Google Looker Studio"],
       description:
         "Conducted an analysis of 200.000+ food orders and clustered the respective regions to draw conclusions about partner performance depending on city size of operations.",
+      backgroundColor: "bg-black",
+      headerColor: "text-blue-500",
+      textColor: "text-white",
+      borderColor: "border-2 border-white",
+    },
+    {
+      id: 7,
+      icon: FileText,
+      name: "Raisekit",
+      domain: "https://github.com/kerem-kaynak/raisekit-backend.git",
+      technologies: ["Fastify (Node.js)", "Vue.js", "TailwindCSS", "Firebase"],
+      description:
+        "Developed the backend of a data room visualization tool for early-stage founders as one of five engineers (special focus on writing pure functions for calculation of revenue and sales data).",
       backgroundColor: "bg-black",
       headerColor: "text-blue-500",
       textColor: "text-white",
@@ -142,4 +172,4 @@ const Cardlist = () => {
   );
 };
 
-export default Cardlist;
+export default CardList;
