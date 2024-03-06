@@ -207,7 +207,7 @@ export default function Home() {
             ))}
           </dl>
           <div className="flex flex-col mt-12 space-y-4 text-center">
-            <h1 className="leading-8">
+            <h1 className="leading-8 text-gray-600">
               It&apos;s recommended to turn this playlist on while looking
               through the projects ;)
             </h1>
