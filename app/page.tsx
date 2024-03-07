@@ -40,7 +40,7 @@ const projects: Project[] = [
     id: 1,
     icon: LayoutDashboard,
     name: "LANCH Partner Dashboard",
-    domain: "https://github.com/trycrumz/partner-dashboard.git",
+    domain: "https://partner.lanch.com/login",
     technologies: [
       "Next.js (TypeScript)",
       "TailwindCSS",
@@ -72,7 +72,7 @@ const projects: Project[] = [
     id: 3,
     icon: Trophy,
     name: "Matchdays",
-    domain: "https://github.com/paulocerez/matchdays",
+    domain: "https://github.com/paulocerez/matchdays-v2.git",
     technologies: [
       "Next.js (TypeScript)",
       "Postgres",
@@ -82,7 +82,7 @@ const projects: Project[] = [
       "GCal API",
     ],
     description:
-      "Matchdays is a web app that allows sports fans to automatically integrate your favorite football clubs' matchdays into your Google Calendar, thereby eliminating the need to do that manually.",
+      "Matchdays is a web app that allows sports fans to automatically integrate your favorite football clubs' matchdays into your Google Calendar, thereby eliminating the need to do that manually (still under construction 🔨).",
     backgroundColor: "bg-blue-500",
     headerColor: "text-white",
     textColor: "text-white",
