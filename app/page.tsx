@@ -170,18 +170,21 @@ export default function Home() {
             Operations. In the past I worked as a Technical Entrepreneur in
             Residence @LANCH, Product Manager @Cardino (VC-backed Berlin-based
             mobility startup), and as a Recruiter @Enpal (focussing on Biz Dev
-            in TA contexts). Check out my experience @LANCH{" "}
-            <Link
-              href="https://www.lanch.com/entrepreneur-program"
-              className="underline hover:text-gray-300"
-            >
-              here
-            </Link>
-            .
+            in TA contexts).
           </p>
         </div>
         <div>
-          <div className="flex flex-row space-x-2 items-center justify-center my-12">
+          <div className="flex flex-col space-x-2 items-center justify-center my-6 text-gray-600 space-y-4">
+            <div className="p-4">
+              Check out my experience @LANCH{" "}
+              <Link
+                href="https://www.lanch.com/entrepreneur-program"
+                className="underline hover:text-gray-300"
+              >
+                here
+              </Link>
+              .
+            </div>
             <Socials />
           </div>
         </div>
