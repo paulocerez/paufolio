@@ -11,13 +11,6 @@ import {
 import Link from "next/link";
 import Footer from "./(components)/Footer";
 
-const icons = {
-  Brain: <Brain />,
-  Search: <Search />,
-  LayoutDashboard: <LayoutDashboard />,
-  Trophy: <Trophy />,
-  FileText: <FileText />,
-};
 interface Project {
   id: number;
   icon: LucideIcon;
@@ -30,6 +23,14 @@ interface Project {
   headerColor: string;
   borderColor: string;
 }
+
+const icons = {
+  Brain: <Brain />,
+  Search: <Search />,
+  LayoutDashboard: <LayoutDashboard />,
+  Trophy: <Trophy />,
+  FileText: <FileText />,
+};
 
 const projects: Project[] = [
   {
