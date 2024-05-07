@@ -1,5 +1,3 @@
-import Socials from "./(components)/Socials";
-import Loom from "./(components)/Loom";
 import {
   Brain,
   Search,
@@ -9,7 +7,9 @@ import {
   LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
-import Footer from "./(components)/Footer";
+import Socials from "./(components)/Socials";
+import Loom from "./(components)/Loom";
+import CardsFooter from "./(components)/CardsFooter";
 
 interface Project {
   id: number;
@@ -183,7 +183,7 @@ export default function Home() {
               </div>
             ))}
           </dl>
-          <Footer />
+          <CardsFooter />
         </div>
       </div>
     </div>
