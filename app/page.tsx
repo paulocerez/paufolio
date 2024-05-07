@@ -164,12 +164,20 @@ export default function Home() {
             </p>
           </div>
           <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-            I&apos;m currently working as a Tech-Entrepreneur in Residence at
-            LANCH and studying Software Engineering at CODE University (based in
+            I&apos;m currently working in Business Development @Octopus Energy
+            🐙 and studying Software Engineering at CODE University 💻 (based in
             Berlin). My focus lies on Web Development, Data Analyses, and People
-            Operations. In the past I worked as a Product Manager at Cardino
-            (VC-backed Berlin-based mobility startup), and as a Recruiter at
-            Enpal (focussing on Biz Dev in TA contexts).
+            Operations. In the past I worked as a Technical Entrepreneur in
+            Residence @LANCH, Product Manager @Cardino (VC-backed Berlin-based
+            mobility startup), and as a Recruiter @Enpal (focussing on Biz Dev
+            in TA contexts). Check out my experience @LANCH{" "}
+            <Link
+              href="https://www.lanch.com/entrepreneur-program"
+              className="underline hover:text-gray-300"
+            >
+              here
+            </Link>
+            .
           </p>
         </div>
         <div>
@@ -209,7 +217,7 @@ export default function Home() {
           <div className="flex flex-col mt-12 space-y-4 text-center">
             <h1 className="leading-8 text-gray-600">
               It&apos;s recommended to turn this playlist on while looking
-              through the projects ;)
+              through the projects. ;)
             </h1>
             <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
             <Footer />
