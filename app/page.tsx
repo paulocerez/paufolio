@@ -1,10 +1,5 @@
-import Cardlist from "./(components)/CardList";
-import SpotifyPlaylist from "./(components)/SpotifyEmbed";
-import Footer from "./(components)/footer";
 import Socials from "./(components)/Socials";
 import Loom from "./(components)/Loom";
-import ModeToggle from "./(components)/ModeToggle";
-// import CardList from "./(components)/CardList";
 import {
   Brain,
   Search,
@@ -14,6 +9,7 @@ import {
   LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
+import Footer from "./(components)/Footer";
 
 const icons = {
   Brain: <Brain />,
@@ -88,37 +84,6 @@ const projects: Project[] = [
     textColor: "text-white",
     borderColor: "border-blue-500",
   },
-  // {
-  //   id: 4,
-  //   name: "Paufolio - this website 👀",
-  //   domain: "https://github.com/paulocerez/paufolio.git",
-  //   technologies: ["Next.js (TypeScript)", "TailwindCSS"],
-  //   description:
-  //     "This is *surprise* *surprise*: the website you are currently on, which serves as my personal portfolio. I thought this joke with my name would be cool, but that didn't convince me enough to buy the domain...",
-  //   backgroundColor: "bg-slate-500",
-  //   headerColor: "text-white",
-  //   textColor: "text-white",
-  //   borderColor: "border-blue-500",
-  // },
-
-  // {
-  //   id: 5,
-  //   name: "Thoughts 💭",
-  //   domain: "https://github.com/paulocerez/thoughts-web",
-  //   technologies: [
-  //     "Vue.js",
-  //     "TypeScript",
-  //     "Postgres",
-  //     "TailwindCSS",
-  //     "Axios",
-  //   ],
-  //   description:
-  //     "Thoughts is a small web application to capture your everyday thoughts, you can think of an online diary.",
-  //   backgroundColor: "bg-black",
-  //   headerColor: "text-blue-500",
-  //   textColor: "text-white",
-  //   borderColor: "border-2 border-white",
-  // },
   {
     id: 6,
     icon: Search,
@@ -217,14 +182,7 @@ export default function Home() {
               </div>
             ))}
           </dl>
-          <div className="flex flex-col mt-12 space-y-4 text-center">
-            <h1 className="leading-8 text-gray-600">
-              It&apos;s recommended to turn this playlist on while looking
-              through the projects. ;)
-            </h1>
-            <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </div>
     </div>
