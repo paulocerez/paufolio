@@ -10,6 +10,7 @@ import Link from "next/link";
 import Socials from "./(components)/Socials";
 import Loom from "./(components)/Loom";
 import CardsFooter from "./(components)/CardsFooter";
+import TopArtists from "./(components)/TopArtists";
 
 interface Project {
   id: number;
@@ -184,6 +185,7 @@ export default function Home() {
             ))}
           </dl>
           <CardsFooter />
+          <TopArtists />
         </div>
       </div>
     </div>
