@@ -43,37 +43,35 @@ export default function TopArtists() {
     );
 
   return (
-    <section className="flex flex-row">
-      <div className="flex flex-row">
-        <h1>My Spotify Top Artists</h1>
-        {artists.length > 0 ? (
-          <ul>
-            {artists.map((artist, index) => (
-              <li key={index}>
-                <figure>
-                  {/* <Image
+    <section className=" bg-red-900 text-center w-full">
+      <h1 className="pb-8">My Spotify Top Artists</h1>
+      {artists.length > 0 ? (
+        <ul className="flex flex-col">
+          {artists.map((artist, index) => (
+            <li key={index} className="bg-blue-500 w-full">
+              <figure className="py-2">
+                {/* <Image
                   src={artist.}
                   alt={artist.name}
                   style={{ width: 100, height: 100 }}
 				  /> */}
-                  <figcaption>
-                    <strong>{artist.name}</strong>
-                    <a
-                      href={artist.uri}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Open on Spotify
-                    </a>
-                  </figcaption>
-                </figure>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>No artists found.</p>
-        )}
-      </div>
+                <figcaption className="flex flex-col items-center">
+                  <strong>{artist.name}</strong>
+                  <a
+                    href={artist.uri}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open on Spotify
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No artists found.</p>
+      )}
     </section>
   );
 }

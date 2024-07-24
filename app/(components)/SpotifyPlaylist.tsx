@@ -6,7 +6,7 @@ interface SpotifyPlaylistProps {
 
 const SpotifyPlaylist: React.FC<SpotifyPlaylistProps> = ({ src }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-start">
       <iframe
         style={{ borderRadius: "12px" }}
         src={src}
