@@ -64,8 +64,17 @@ export async function GET() {
 
   const artists: Artist[] = topArtistsData.items.map((artist: Artist) => ({
     name: artist.name,
+    followers: {
+      href: artist.followers.href,
+      total: artist.followers.total,
+    },
     uri: artist.uri,
+    images: artist.images,
+    imageUrl:
+      artist.images.length > 0 ? artist.images[0].url : "/spotify-logo.svg",
   }));
+
+  console.log(artists);
 
   return NextResponse.json({ artists }, { status: 200 });
 }

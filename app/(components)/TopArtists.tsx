@@ -44,18 +44,23 @@ export default function TopArtists() {
 
   return (
     <section className="text-center w-full">
-      <h1 className="pb-8">My Spotify Top Artists</h1>
+      <h1 className="pb-8 text-gray-600">My Spotify Top Artists</h1>
       {artists.length > 0 ? (
-        <ul className="flex flex-col">
+        <ul className="flex flex-row">
           {artists.map((artist, index) => (
             <li key={index} className="w-full">
-              <figure className="py-2">
-                {/* <Image
-                  src={artist.}
+              <figure
+                className="flex flex-col items-center space-y-4 py-2"
+                style={index % 2 !== 0 ? { transform: "translateY(20px)" } : {}}
+              >
+                <Image
+                  src={artist.imageUrl}
                   alt={artist.name}
-                  style={{ width: 100, height: 100 }}
-				  /> */}
-                <figcaption className="flex flex-col items-center">
+                  width={artist.images[0]?.width / 20 || 36}
+                  height={artist.images[0]?.height / 20 || 36}
+                  className="rounded-md"
+                />
+                <figcaption>
                   <a
                     href={artist.uri}
                     target="_blank"
@@ -64,6 +69,7 @@ export default function TopArtists() {
                     <strong>{artist.name}</strong>
                   </a>
                 </figcaption>
+                {/* <p>{artist.followers.total} Followers</p> */}
               </figure>
             </li>
           ))}

@@ -2,7 +2,7 @@ import { Brain, Search, LayoutDashboard, Trophy, FileText } from "lucide-react";
 import Link from "next/link";
 import Socials from "./(components)/Socials";
 import Loom from "./(components)/Loom";
-import CardsFooter from "./(components)/CardsFooter";
+import CardsFooter from "./(components)/SpotifySection";
 import TopArtists from "./(components)/TopArtists";
 import { Project } from "@/types/projects";
 import { projects } from "./data/projectCollection";

@@ -20,8 +20,10 @@ const Footer = () => {
           ></iframe>
         </div>
       </div>
-      <h1 className="leading-8 text-gray-600">Spotify is my life.</h1>
-      <div className="flex flex-row items-start">
+      <h1 className="leading-8 text-gray-600">
+        The most important statistics & resources (Spotify ofc 🤓).
+      </h1>
+      <div className="flex flex-col">
         <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />
         <TopArtists />
       </div>
