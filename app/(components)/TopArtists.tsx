@@ -12,7 +12,7 @@ export default function TopArtists() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/spotify");
+        const response = await fetch("/api/top-artists");
         if (!response.ok) {
           throw new Error("Failed to fetch Top Artists");
         }

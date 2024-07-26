@@ -1,5 +1,6 @@
 import React from "react";
 import SpotifyPlaylist from "./SpotifyPlaylist";
+import TopArtists from "./TopArtists";
 
 export default function SpotifySection() {
   return (

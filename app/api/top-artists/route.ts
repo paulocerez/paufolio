@@ -59,7 +59,6 @@ export async function GET() {
       { status: 500 }
     );
   }
-
   const topArtistsData = await getTopArtists.json();
 
   const artists: Artist[] = topArtistsData.items.map((artist: Artist) => ({
