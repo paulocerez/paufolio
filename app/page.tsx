@@ -1,7 +1,8 @@
 import { Brain, Search, LayoutDashboard, Trophy, FileText } from "lucide-react";
-import CardsFooter from "./(components)/SpotifySection";
 import IntroParagraph from "./(components)/IntroParagraph";
 import Projects from "./(components)/Projects";
+import References from "./(components)/References";
+import SpotifySection from "./(components)/SpotifySection";
 
 const icons = {
   Brain: <Brain />,
@@ -13,14 +14,11 @@ const icons = {
 
 export default function Home() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <IntroParagraph />
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl bg-red-500">
-          <Projects />
-          <CardsFooter />
-        </div>
-      </div>
+    <div className="flex flex-col space-y-16 bg-white sm:py-16 sm:mt-20 mx-auto mt-16 px-6 max-w-2xl lg:px-8 lg:mt-24 lg:max-w-5xl">
+      <IntroParagraph />
+      <Projects />
+      <References />
+      <SpotifySection />
     </div>
   );
 }
