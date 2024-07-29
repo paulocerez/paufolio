@@ -17,7 +17,7 @@ const Socials = () => {
       <div className="github flex flex-row space-x-4 text-gray-600">
         <ExternalLink />
         <Link
-          href="https://drive.google.com/file/d/13ggGbn1NRK5MxVbOF3wR2jCQfrvKFP5S/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-LAHdVmzJA1RuTQ4C9HsX1nxV2uY3kJ1/view?usp=sharing"
           className="hover:underline"
         >
           Download CV
