@@ -46,30 +46,34 @@ export default function TopArtists() {
     <section className="text-center w-full">
       <h1 className="pb-8 text-gray-600">My Spotify Top Artists</h1>
       {artists.length > 0 ? (
-        <ul className="flex flex-row">
+        <ul className="flex flex-row justify-between">
           {artists.map((artist, index) => (
-            <li key={index} className="w-full">
-              <figure
-                className="flex flex-col items-center space-y-4 py-2"
-                style={index % 2 !== 0 ? { transform: "translateY(20px)" } : {}}
-              >
-                <Image
-                  src={artist.imageUrl}
-                  alt={artist.name}
-                  width={artist.images[0]?.width / 20 || 36}
-                  height={artist.images[0]?.height / 20 || 36}
-                  className="rounded-md"
-                />
-                <figcaption>
-                  <a
-                    href={artist.uri}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <strong>{artist.name}</strong>
-                  </a>
-                </figcaption>
-                {/* <p>{artist.followers.total} Followers</p> */}
+            <li key={index}>
+              <figure>
+                <div
+                  style={{
+                    position: "relative",
+                    width: "36px",
+                    height: "36px",
+                  }}
+                  className="flex flex-col space-y-4"
+                >
+                  <Image
+                    src={artist.imageUrl}
+                    alt={artist.name}
+                    width={36}
+                    height={36}
+                  />
+                  <figcaption>
+                    <a
+                      href={artist.uri}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <strong>{artist.name}</strong>
+                    </a>
+                  </figcaption>
+                </div>
               </figure>
             </li>
           ))}

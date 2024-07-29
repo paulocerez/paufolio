@@ -6,7 +6,7 @@ export default function SpotifySection() {
   return (
     <div className="flex flex-col space-y-12 text-center">
       <h1 className="leading-8 text-gray-600">
-        The most important statistics & resources (Spotify ofc 🤓).
+        Your bestie&apos;s favorite playlist.
       </h1>
       <div className="flex flex-col">
         <SpotifyPlaylist src="https://open.spotify.com/embed/playlist/4VXYH0kB0aahjstiia8bT8?utm_source=generator&theme=0" />

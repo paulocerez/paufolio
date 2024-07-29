@@ -3,7 +3,6 @@ import IntroParagraph from "./(components)/IntroParagraph";
 import Projects from "./(components)/Projects";
 import References from "./(components)/References";
 import SpotifySection from "./(components)/SpotifySection";
-import Logos from "./(components)/Logos";
 
 const icons = {
   Brain: <Brain />,

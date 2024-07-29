@@ -73,7 +73,5 @@ export async function GET() {
       artist.images.length > 0 ? artist.images[0].url : "/spotify-logo.svg",
   }));
 
-  console.log(artists);
-
   return NextResponse.json({ artists }, { status: 200 });
 }
