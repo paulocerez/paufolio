@@ -1,9 +1,35 @@
 import { Project } from "@/types/projects";
-import { Brain, Search, LayoutDashboard, Trophy, FileText } from "lucide-react";
+import {
+  Brain,
+  Search,
+  LayoutDashboard,
+  Trophy,
+  FileText,
+  FileCode2,
+} from "lucide-react";
 
 export const projects: Project[] = [
   {
     id: 1,
+    icon: FileCode2,
+    name: "2docs",
+    domain: "https://www.2docs.de/",
+    technologies: [
+      "Next.js (TypeScript)",
+      "TailwindCSS",
+      "Drizzle",
+      "Neon Postgres",
+      "React Query",
+    ],
+    description:
+      "2docs is an API Documentation aggregator that can be used to generate custom code workflows. Best used for all the integrations Zapier didn't implement yet. Currently under construction.",
+    backgroundColor: "bg-slate-500",
+    headerColor: "text-white",
+    textColor: "text-white",
+    borderColor: "border-blue-500",
+  },
+  {
+    id: 2,
     icon: LayoutDashboard,
     name: "LANCH Partner Dashboard",
     domain: "https://partner.lanch.com/login",
@@ -14,14 +40,14 @@ export const projects: Project[] = [
       "Hasura (BigQuery)",
     ],
     description:
-      "The LANCH Partner Dashboard is an internal application for LANCH's 80+ gastronomy partners to track their performance analytics. Currently the app has 50+ users (around 10 DAU).",
+      "The LANCH Partner Dashboard is an internal application for LANCH's 80+ gastronomy partners to track their performance analytics. The app had 70+ users after its initial release (around 7 DAU).",
     backgroundColor: "bg-slate-500",
     headerColor: "text-white",
     textColor: "text-white",
     borderColor: "border-blue-500",
   },
   {
-    id: 2,
+    id: 3,
     icon: Brain,
     name: "rememberry",
     domain: "https://github.com/rememberry-io/rememberry",
@@ -35,7 +61,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     icon: Trophy,
     name: "Matchdays",
     domain: "https://github.com/paulocerez/matchdays-v2.git",
@@ -55,7 +81,7 @@ export const projects: Project[] = [
     borderColor: "border-blue-500",
   },
   {
-    id: 6,
+    id: 5,
     icon: Search,
     name: "LANCH Tier 1-2-3-4 Analysis",
     domain: "https://github.com/paulocerez/lanch-order-analyses-tiers.git",
@@ -68,7 +94,7 @@ export const projects: Project[] = [
     borderColor: "border-2 border-white",
   },
   {
-    id: 7,
+    id: 6,
     icon: FileText,
     name: "Raisekit",
     domain: "https://github.com/kerem-kaynak/raisekit-backend.git",

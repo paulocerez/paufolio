@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Loom from "./Loom";
 import Socials from "./Socials";
+import Companies from "./Companies";
 
 export default function IntroParagraph() {
   return (
@@ -8,23 +9,22 @@ export default function IntroParagraph() {
       <div className="flex justify-center items-center sm:w-full">
         <Loom />
       </div>
-      <div className="animate-slide-in-bottom">
-        <h2 className="text-xl font-semibold leading-7 text-indigo-600">
-          Welcome my friend! 👋🏼
-        </h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          This is my personal website. <br></br> Feel free to explore. 🤓
-        </p>
+      <div className="animate-slide-in-bottom ">
+        <div className="flex flex-col sm:flex-row items-start md:items-center gap-8">
+          <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl text-left">
+            This is my personal website. <br></br> Feel free to explore. 🤓
+          </h1>
+          <Companies />
+        </div>
       </div>
 
       <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-        I&apos;m currently working in Business Development @Octopus Energy 🐙
-        and studying Software Engineering at CODE University 💻 (based in
-        Berlin). My focus lies on Web Development, Data Analyses, and People
-        Operations. In the past I worked as a Technical Entrepreneur in
-        Residence @LANCH, Product Manager @Cardino (VC-backed Berlin-based
-        mobility startup), and as a Recruiter @Enpal (focussing on Biz Dev in TA
-        contexts).
+        I&apos;m currently working as a Software Engineer at Ivy and studying
+        Software Engineering at CODE University 💻 in Berlin. My focus lies on
+        Web Development, Data Analyses, and Productivity. In the past I worked
+        in technical and business positions in the space of mobility, renewable
+        energies and consumer brands. Currently getting my hands dirty in the
+        fintech space.
       </p>
       <div className="flex flex-col space-x-2 items-center justify-center my-6 text-gray-600 space-y-4">
         <div className="p-4">

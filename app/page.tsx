@@ -4,13 +4,13 @@ import Projects from "./(components)/Projects";
 import References from "./(components)/References";
 import SpotifySection from "./(components)/SpotifySection";
 
-const icons = {
-  Brain: <Brain />,
-  Search: <Search />,
-  LayoutDashboard: <LayoutDashboard />,
-  Trophy: <Trophy />,
-  FileText: <FileText />,
-};
+// const icons = {
+//   Brain: <Brain />,
+//   Search: <Search />,
+//   LayoutDashboard: <LayoutDashboard />,
+//   Trophy: <Trophy />,
+//   FileText: <FileText />,
+// };
 
 export default function Home() {
   return (
