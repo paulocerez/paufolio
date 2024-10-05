@@ -4,7 +4,8 @@ import { Project } from "@/types/projects";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="space-y-8">
+      <h2 className="text-2xl font-semibold text-center mb-6">Projects</h2>
       <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
         {projects.map((project: Project) => (
           <div key={project.id} className="relative pl-16">

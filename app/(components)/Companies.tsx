@@ -42,16 +42,7 @@ export default function Companies() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="block sm:hidden">
-              <Image
-                src={logos[currentLogoIndex].src}
-                alt={logos[currentLogoIndex].alt}
-                width={100}
-                height={100}
-                className="object-contain"
-              />
-            </div>
-            <div className="hidden sm:block">
+            <div>
               <Image
                 src={logos[currentLogoIndex].src}
                 alt={logos[currentLogoIndex].alt}

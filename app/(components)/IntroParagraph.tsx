@@ -11,7 +11,7 @@ export default function IntroParagraph() {
       </div>
       <div className="animate-slide-in-bottom">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
-          <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl text-left">
+          <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl text-center sm:text-left">
             This is my personal website. <br></br> Feel free to explore. 🤓
           </h1>
           <Companies />
@@ -20,9 +20,9 @@ export default function IntroParagraph() {
 
       <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
         I&apos;m currently working as a Software Engineer at Ivy and studying
-        Software Engineering at CODE University 💻 in Berlin. My focus lies on
-        Web Development, Data Analyses, and Productivity. In the past I worked
-        in technical and business positions in the space of mobility, renewable
+        Software Engineering at CODE University in Berlin. My focus lies on Web
+        Development, Data Analyses, and Productivity. In the past I worked in
+        technical and business positions in the space of mobility, renewable
         energies and consumer brands. Currently getting my hands dirty in the
         fintech space.
       </p>
