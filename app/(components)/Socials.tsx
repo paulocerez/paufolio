@@ -5,7 +5,7 @@ import Link from "next/link";
 const Socials = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-center mx-auto sm:items-center sm:space-x-10 space-y-5 sm:space-y-0">
-      <div className="linkedin flex flex-row space-x-4 text-gray-600 items-center">
+      <div className="linkedin flex flex-row space-x-4 text-gray-600 items-center hover:bg-gray-100 py-2 px-3 rounded-md">
         <div className="p-2 border rounded-md shadow-md">
           <Linkedin />
         </div>
@@ -16,7 +16,7 @@ const Socials = () => {
           LinkedIn
         </Link>
       </div>
-      <div className="github flex flex-row space-x-4 text-gray-600 items-center">
+      <div className="cv flex flex-row space-x-4 text-gray-600 items-center hover:bg-gray-100 py-2 px-3 rounded-md">
         <div className="p-2 border rounded-md shadow-md">
           <ExternalLink />
         </div>
@@ -27,7 +27,7 @@ const Socials = () => {
           My CV
         </Link>
       </div>
-      <div className="github flex flex-row space-x-4 text-gray-600 items-center">
+      <div className="linkedin flex flex-row space-x-4 text-gray-600 items-center hover:bg-gray-100 py-2 px-3 rounded-md">
         <div className="p-2 border rounded-md shadow-md">
           <Github />
         </div>

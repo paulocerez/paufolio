@@ -9,8 +9,8 @@ export default function IntroParagraph() {
       <div className="flex justify-center items-center sm:w-full">
         <Loom />
       </div>
-      <div className="animate-slide-in-bottom ">
-        <div className="flex flex-col sm:flex-row items-start md:items-center gap-8">
+      <div className="animate-slide-in-bottom">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
           <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl text-left">
             This is my personal website. <br></br> Feel free to explore. 🤓
           </h1>

@@ -31,7 +31,7 @@ export default function Companies() {
   }, []);
 
   return (
-    <div className="flex-grow">
+    <div className="flex-grow w-full sm:w-auto">
       <div className="relative h-24 rounded-lg overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
