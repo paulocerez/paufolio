@@ -4,20 +4,16 @@ interface SpotifyPlaylistProps {
   src: string;
 }
 
-const SpotifyPlaylist: React.FC<SpotifyPlaylistProps> = ({ src }) => {
+export default function SpotifyPlaylist({ src }: SpotifyPlaylistProps) {
   return (
     <div className="flex flex-col justify-center items-center">
       <iframe
-        style={{ borderRadius: "12px" }}
+        className="rounded-xl w-full aspect-video max-w-[500px]"
         src={src}
-        width={576}
-        height={360}
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
     </div>
   );
-};
-
-export default SpotifyPlaylist;
+}

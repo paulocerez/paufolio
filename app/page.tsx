@@ -1,28 +1,40 @@
-"use client";
-import { useState } from "react";
-import IntroParagraph from "./(components)/IntroParagraph";
-import Projects from "./(components)/Projects";
-import References from "./(components)/References";
-import SpotifySection from "./(components)/SpotifySection";
-import Work from "./(components)/Work";
-import ToggleSwitch from "./(components)/ToggleSwitch";
+import Projects from "@/components/sections/Projects";
+import Socials from "@/components/sections/Socials";
+import AboutMe from "@/components/sections/AboutMe";
+import Work from "@/components/sections/Work";
+import TechStack from "@/components/TechStack";
+import SpotifyPlaylist from "@/components/spotify/SpotifyPlaylist";
+import Loom from "@/components/sections/Loom";
 
 export default function Home() {
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
-
   return (
-    <div className="flex flex-col space-y-16 bg-white sm:py-16 mx-auto mt-16 sm:mt-12 px-6 max-w-2xl lg:px-8 lg:max-w-5xl">
-      <IntroParagraph />
-      <div className="flex justify-center space-x-4">
-        <ToggleSwitch
-          options={["Projects", "Work Experience"]}
-          selectedIndex={selectedIndex}
-          onChange={setSelectedIndex}
-        />
+    <main className="min-h-screen flex flex-col bg-gray-50">
+      <div className="flex-grow">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-10 h-full">
+          <div className="space-y-16">
+            <div className="flex flex-col space-y-4">
+              <AboutMe />
+              <Socials />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+              <div className="space-y-16">
+                <Projects />
+                <TechStack />
+              </div>
+              <div className="space-y-16">
+                <div className="flex flex-col space-y-4">
+                  <Work />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      {selectedIndex === 0 ? <Projects /> : <Work />}
-      <References />
-      <SpotifySection />
-    </div>
+      <div className="flex flex-col items-center justify-center">
+        <p className="text-center leading-8 p-10 text-gray-600">
+          Made with 🎧 & ❤️ in Berlin.
+        </p>
+      </div>
+    </main>
   );
 }
