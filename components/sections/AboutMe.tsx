@@ -7,9 +7,9 @@ export default function AboutMe() {
         <Image
           src="/paulo.png"
           alt="Paulo Ramirez"
+          className="rounded-full w-[32px] h-[32px] object-cover"
           width={32}
           height={32}
-          className="rounded-full w-[32px] h-[32px] object-cover"
         />
         <h1 className="text-2xl font-semibold text-gray-700">Paulo Ramirez</h1>
       </div>
