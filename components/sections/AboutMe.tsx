@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div className="flex flex-col text-left space-y-4">
       <div className="flex flex-row space-x-4 items-center">
         <Image
-          src="/paulo.png"
+          src="/profile-image.png"
           alt="Paulo Ramirez"
           className="rounded-full w-[32px] h-[32px] object-cover"
           width={32}

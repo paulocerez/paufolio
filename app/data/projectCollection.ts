@@ -1,16 +1,35 @@
 import { Project } from "@/types/projects";
 import {
-  Brain,
-  Search,
   LayoutDashboard,
   Trophy,
   FileText,
   FileCode2,
+  Search,
 } from "lucide-react";
 
 export const projects: Project[] = [
   {
     id: 1,
+    icon: Search,
+    name: "Prospecto",
+    domain: "https://prospecto.co/",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Drizzle",
+      "Neon Postgres",
+      "React Query",
+    ],
+    description:
+      "Automate your active sourcing and outreach to reach potential hires.",
+    backgroundColor: "bg-slate-500",
+    headerColor: "text-white",
+    textColor: "text-white",
+    borderColor: "border-blue-500",
+  },
+  {
+    id: 2,
     icon: FileCode2,
     name: "2docs",
     domain: "https://www.2docs.de/",
@@ -30,7 +49,7 @@ export const projects: Project[] = [
     borderColor: "border-blue-500",
   },
   {
-    id: 2,
+    id: 3,
     icon: LayoutDashboard,
     name: "LANCH Partner Dashboard",
     domain: "https://partner.lanch.com/login",
