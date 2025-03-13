@@ -3,8 +3,8 @@ import Image from "next/image";
 export interface Experience {
   organization: string;
   role: string;
-  duration: string;
   logo: string;
+  duration?: string;
 }
 
 interface ExperienceItemProps {
@@ -28,7 +28,6 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
           {experience.organization}
         </h3>
         <p className="text-sm text-gray-600">{experience.role}</p>
-        <p className="text-sm text-gray-400">{experience.duration}</p>
       </div>
     </div>
   );

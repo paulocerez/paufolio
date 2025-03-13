@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Project } from "@/types/projects";
 import { projects } from "../../app/data/projectCollection";
-import { ArrowRight } from "lucide-react";
 
 export default function Projects() {
   return (

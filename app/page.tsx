@@ -2,9 +2,6 @@ import Projects from "@/components/sections/Projects";
 import Socials from "@/components/sections/Socials";
 import AboutMe from "@/components/sections/AboutMe";
 import Work from "@/components/sections/Work";
-import TechStack from "@/components/TechStack";
-import SpotifyPlaylist from "@/components/spotify/SpotifyPlaylist";
-import Loom from "@/components/sections/Loom";
 
 export default function Home() {
   return (
@@ -17,10 +14,7 @@ export default function Home() {
               <Socials />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-              <div className="space-y-16">
-                <Projects />
-                <TechStack />
-              </div>
+              <Projects />
               <div className="space-y-16">
                 <div className="flex flex-col space-y-4">
                   <Work />

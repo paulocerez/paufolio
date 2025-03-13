@@ -6,34 +6,34 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const workExperiences: Experience[] = [
   {
-    organization: "Ivy",
-    role: "Software Engineer",
-    duration: "Okt. 2024 - Present",
-    logo: "/ivy-logo.png",
+    organization: "telli (YC F24)",
+    role: "Founders Associate",
+    logo: "/company-logos/telli-logo.png",
   },
   {
-    organization: "Octopus Energy Services",
-    role: "Business Development & Data",
-    duration: "Apr. 2024 - Sept. 2024",
-    logo: "/octopus-logo.png",
+    organization: "Ivy",
+    role: "Software Engineer",
+    logo: "/company-logos/ivy-logo.png",
   },
   {
     organization: "LANCH",
     role: "Tech Entrepreneur in Residence",
-    duration: "Dez. 2023 - März 2024",
-    logo: "/lanch-logo.png",
+    logo: "/company-logos/lanch-logo.png",
   },
   {
     organization: "Cardino",
-    role: "Product & Tech",
-    duration: "Juni 2023 - Nov. 2023",
-    logo: "/cardino-logo.png",
+    role: "Founders Associate Product",
+    logo: "/company-logos/cardino-logo.png",
+  },
+  {
+    organization: "Octopus Energy Services",
+    role: "Business Development & Data",
+    logo: "/company-logos/octopus-logo.png",
   },
   {
     organization: "Enpal",
     role: "Recruiting & Processes",
-    duration: "Sept. 2022 - Mai 2023",
-    logo: "/enpal-logo.png",
+    logo: "/company-logos/enpal-logo.png",
   },
 ];
 
@@ -41,7 +41,6 @@ const educationExperiences: Experience[] = [
   {
     organization: "CODE University of Applied Sciences",
     role: "B.Sc. Software Engineering",
-    duration: "2022 - 2025",
     logo: "/code-logo.png",
   },
 ];
