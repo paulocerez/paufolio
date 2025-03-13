@@ -41,7 +41,7 @@ const educationExperiences: Experience[] = [
   {
     organization: "CODE University of Applied Sciences",
     role: "B.Sc. Software Engineering",
-    logo: "/code-logo.png",
+    logo: "/company-logos/code-logo.png",
   },
 ];
 
