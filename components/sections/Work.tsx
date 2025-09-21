@@ -1,104 +1,82 @@
-"use client";
-
-import { useState } from "react";
-import { Experience, ExperienceItem } from "../ui/ExperienceItem";
-import { ChevronDown, ChevronUp } from "lucide-react";
-
-const workExperiences: Experience[] = [
+const workExperiences = [
   {
     organization: "telli (YC F24)",
     role: "Founders Associate",
-    logo: "/company-logos/telli-logo.png",
+    description: "Working as a Founders Associate at telli, a Y Combinator F24 company, focusing on strategic initiatives and operational support."
   },
   {
     organization: "Ivy",
     role: "Software Engineer",
-    logo: "/company-logos/ivy-logo.png",
+    description: "Developed and maintained software solutions as a Software Engineer, contributing to the company's technical infrastructure and product development."
   },
   {
     organization: "LANCH",
     role: "Tech Entrepreneur in Residence",
-    logo: "/company-logos/lanch-logo.png",
+    description: "Served as a Tech Entrepreneur in Residence, working on innovative solutions and strategic technology initiatives within the organization."
   },
   {
     organization: "Cardino",
     role: "Founders Associate Product",
-    logo: "/company-logos/cardino-logo.png",
+    description: "Acted as a Founders Associate focused on product development, working closely with the founding team to shape product strategy and execution."
   },
   {
     organization: "Octopus Energy Services",
     role: "Business Development & Data",
-    logo: "/company-logos/octopus-logo.png",
+    description: "Led business development initiatives while leveraging data analytics to drive growth and operational efficiency in the energy services sector."
   },
   {
     organization: "Enpal",
     role: "Recruiting & Processes",
-    logo: "/company-logos/enpal-logo.png",
+    description: "Managed recruiting operations and process optimization, contributing to the company's growth through strategic talent acquisition and operational improvements."
   },
 ];
 
-const educationExperiences: Experience[] = [
+const educationExperiences = [
   {
     organization: "CODE University of Applied Sciences",
     role: "B.Sc. Software Engineering",
-    logo: "/company-logos/code-logo.png",
+    description: "Completed a Bachelor of Science in Software Engineering, gaining comprehensive knowledge in modern software development practices, algorithms, and system design."
   },
 ];
 
 export default function Work() {
-  const [showAllWorkExperiences, setShowAllWorkExperiences] = useState(false);
-
-  const displayedWorkExperiences = workExperiences.slice(0, 3);
-  const hiddenWorkExperiences = workExperiences.slice(3);
-
   return (
-    <div className="space-y-12">
-      <div className="space-y-2">
-        <h2 className="text-md font-normal text-gray-700">Work</h2>
+    <div>
+      <h2 className="text-2xl font-crimson font-light text-white mb-12">
+        Experience
+      </h2>
+      
+      <div className="space-y-8">
         <div>
-          {displayedWorkExperiences.map((experience, index) => (
-            <ExperienceItem key={index} experience={experience} />
-          ))}
-          <div
-            className={`overflow-hidden transition-all duration-500 ease-in-out ${
-              showAllWorkExperiences
-                ? "max-h-[500px] opacity-100"
-                : "max-h-0 opacity-0"
-            }`}
-          >
-            {hiddenWorkExperiences.map((experience, index) => (
-              <ExperienceItem key={index + 3} experience={experience} />
+          <h3 className="text-lg font-light text-white mb-6">Professional Experience</h3>
+          <div className="space-y-6">
+            {workExperiences.map((experience, index) => (
+              <div key={index} className="py-4">
+                <h4 className="text-base font-light text-white mb-2">
+                  {experience.role} at {experience.organization}
+                </h4>
+                <p className="text-gray-300 text-sm font-light leading-relaxed">
+                  {experience.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
-        {workExperiences.length > 3 && (
-          <button
-            onClick={() => setShowAllWorkExperiences(!showAllWorkExperiences)}
-            className="flex flex-row items-center gap-2 hover:text-gray-600 transition-all duration-200"
-          >
-            {showAllWorkExperiences ? (
-              <div className="flex flex-row items-center gap-2">
-                <ChevronUp className="h-5 w-5 text-gray-400" />
-                <p className="text-gray-400 text-sm">Show less</p>
-              </div>
-            ) : (
-              <div className="flex flex-row items-center gap-2">
-                <ChevronDown className="h-5 w-5 text-gray-400" />
-                <p className="text-gray-400 text-sm">
-                  Show {workExperiences.length - 3} more
+        
+        <div>
+          <h3 className="text-lg font-light text-white mb-6">Education</h3>
+          <div className="space-y-6">
+            {educationExperiences.map((experience, index) => (
+              <div key={index} className="py-4">
+                <h4 className="text-base font-light text-white mb-2">
+                  {experience.role} at {experience.organization}
+                </h4>
+                <p className="text-gray-300 text-sm font-light leading-relaxed">
+                  {experience.description}
                 </p>
               </div>
-            )}
-          </button>
-        )}
-      </div>
-
-      <div className="space-y-2">
-        <h2 className="text-md font-normal text-gray-700">Education</h2>
-        <div>
-          {educationExperiences.map((experience, index) => (
-            <ExperienceItem key={index} experience={experience} />
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

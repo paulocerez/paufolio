@@ -13,23 +13,23 @@ interface ExperienceItemProps {
 
 export function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
-    <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-gray-700 hover:bg-gray-900 transition-all duration-200">
+    <div className="flex items-center gap-4 py-4 last:pb-0">
       <div className="flex-shrink-0">
-        <div className="p-2 bg-gray-800 rounded-lg">
+        <div className="p-2 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
           <Image
             src={experience.logo}
             alt={`${experience.organization} logo`}
-            width={32}
-            height={32}
+            width={40}
+            height={40}
             className="object-contain"
           />
         </div>
       </div>
       <div className="flex flex-col">
-        <h3 className="text-base font-semibold text-white">
+        <h3 className="text-base font-medium text-black dark:text-white">
           {experience.organization}
         </h3>
-        <p className="text-sm text-gray-400">{experience.role}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">{experience.role}</p>
       </div>
     </div>
   );

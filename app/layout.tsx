@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Crimson_Text, Source_Serif_4, Rock_Salt } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const crimson = Crimson_Text({ 
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-crimson",
+  display: "swap"
+});
+
+const sourceSerif = Source_Serif_4({ 
+  subsets: ["latin"],
+  variable: "--font-source-serif",
+  display: "swap"
+});
+
+const rockSalt = Rock_Salt({ 
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-rock-salt",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   title: "Paufolio",
@@ -15,8 +33,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${crimson.variable} ${sourceSerif.variable} ${rockSalt.variable}`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'dark' || (!theme && prefersDark)) {
+                  document.documentElement.classList.add('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body className="font-crimson">
+          {children}
+      </body>
     </html>
   );
 }
