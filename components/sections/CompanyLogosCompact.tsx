@@ -33,7 +33,7 @@ export default function CompanyLogosCompact() {
       
       <div className="mt-4 text-center">
         <p className="text-gray-500 text-xs font-light">
-          Companies I've worked with
+          Companies I have worked with
         </p>
       </div>
     </div>

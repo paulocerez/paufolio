@@ -14,7 +14,7 @@ export default function CompanyLogos() {
   return (
     <div className="py-8">
       <h2 className="text-2xl font-crimson font-light text-white mb-8">
-      Companies I've worked with
+      Companies I have worked with
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
