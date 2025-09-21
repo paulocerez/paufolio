@@ -23,7 +23,7 @@ const rockSalt = Rock_Salt({
 });
 
 export const metadata: Metadata = {
-  title: "Paufolio",
+  title: "Paulo Ramirez",
   description: "Personal Website of Paulo Ramirez",
 };
 
