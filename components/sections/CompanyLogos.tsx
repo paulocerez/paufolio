@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const companies = [
-  { name: "telli", logo: "/company-logos/telli-logo.png", description: "Forward Deplyed Engineering" },
+  { name: "telli", logo: "/company-logos/telli-logo.png", description: "Forward Deployed Engineering" },
   { name: "Ivy", logo: "/company-logos/ivy-logo.png", description: "Software Engineering" },
   { name: "LANCH", logo: "/company-logos/lanch-logo.png", description: "Engineering & Strategy" },
   { name: "Cardino", logo: "/company-logos/cardino-logo.png", description: "Product & Ops" },

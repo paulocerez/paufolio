@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/one.jpg"
+              src="/three.png"
               alt="Paulo Ramirez"
               width={200}
               height={200}
