@@ -10,7 +10,7 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <div className="max-w-2xl mx-auto px-8 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-8">
+          <div className="space-y-4">
             <AboutMe />
             <LastPlayed />
             <Socials />
@@ -26,13 +26,13 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="mt-16">
+        <div className="mt-4">
           <Paragraph />
         </div>
-        <div className="mt-16">
+        <div className="mt-4">
           <CompanyLogos />
         </div>
-        <div className="mt-24 pt-8">
+        <div className="mt-4 pt-8">
           <p className="text-gray-500 text-sm">
             Made with 🎧 in Berlin
           </p>

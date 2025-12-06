@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const companies = [
-  { name: "telli", logo: "/company-logos/telli-logo.png", description: "Forward Deployed Engineering" },
-  { name: "Ivy", logo: "/company-logos/ivy-logo.png", description: "Software Engineering" },
-  { name: "LANCH", logo: "/company-logos/lanch-logo.png", description: "Engineering & Strategy" },
-  { name: "Cardino", logo: "/company-logos/cardino-logo.png", description: "Product & Ops" },
-  { name: "Octopus Energy", logo: "/company-logos/octopus-logo.png", description: "Data Analysis" },
-  { name: "Enpal", logo: "/company-logos/enpal-logo.png", description: "Recruiting & Operations" },
+  { name: "telli (YC F24)", logo: "/company-logos/telli-logo.png", description: "Forward Deployed Engineer" },
+  { name: "Ivy", logo: "/company-logos/ivy-logo.png", description: "Software Engineer" },
+  { name: "LANCH", logo: "/company-logos/lanch-logo.png", description: "Software Engineer" },
+  { name: "Cardino", logo: "/company-logos/cardino-logo.png", description: "Product" },
+  { name: "Octopus Energy", logo: "/company-logos/octopus-logo.png", description: "Data Analyst" },
+  { name: "Enpal", logo: "/company-logos/enpal-logo.png", description: "Biz Dev & Recruiting" },
   { name: "CODE University", logo: "/company-logos/code-logo.png", description: "B.Sc. Software Engineering" },
 ];
 

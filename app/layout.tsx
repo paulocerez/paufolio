@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Crimson_Text, Source_Serif_4, Rock_Salt } from "next/font/google";
+import { Crimson_Text, Source_Serif_4, Nothing_You_Could_Do } from "next/font/google";
 import "./globals.css";
 
 const crimson = Crimson_Text({ 
@@ -15,10 +15,10 @@ const sourceSerif = Source_Serif_4({
   display: "swap"
 });
 
-const rockSalt = Rock_Salt({ 
+const nothingYouCouldDo = Nothing_You_Could_Do({ 
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-rock-salt",
+  variable: "--font-nothing-you-could-do",
   display: "swap"
 });
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${crimson.variable} ${sourceSerif.variable} ${rockSalt.variable}`}>
+    <html lang="en" className={`${crimson.variable} ${sourceSerif.variable} ${nothingYouCouldDo.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{

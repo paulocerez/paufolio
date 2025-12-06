@@ -73,8 +73,8 @@
       @apply bg-black text-white;
     }
     
-    .font-rock-salt {
-      font-family: 'Rock Salt', cursive;
+    .font-nothing-you-could-do {
+      font-family: var(--font-nothing-you-could-do), cursive;
     }
   }
 
