@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 export default function Projects() {
   return (
     <div>
-      <h2 className="text-2xl font-crimson font-light text-white mb-12">
+      <h2 className="text-2xl font-light text-white mb-12">
         Projects
       </h2>
       

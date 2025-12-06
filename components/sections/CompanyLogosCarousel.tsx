@@ -26,7 +26,7 @@ export default function CompanyLogosCarousel() {
 
   return (
     <div className="py-8">
-      <h2 className="text-2xl font-crimson font-light text-white mb-8 text-center">
+      <h2 className="text-2xl font-light text-white mb-8 text-center">
         Experience
       </h2>
       

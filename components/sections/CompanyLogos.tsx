@@ -13,7 +13,7 @@ const companies = [
 export default function CompanyLogos() {
   return (
     <div className="py-8">
-      <h2 className="text-2xl font-crimson font-light text-white mb-8">
+      <h2 className="text-2xl font-light text-white mb-8">
       Companies I have worked with
       </h2>
       

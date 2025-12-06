@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <div>
-      <h1 className="text-4xl font-rock-salt text-white leading-none">
+      <h1 className="text-4xl text-white leading-none">
         Paulo Ramirez
       </h1>
       <p className="mt-2 text-sm text-white font-light">
