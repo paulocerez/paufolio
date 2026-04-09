@@ -1,81 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base allows to define styles for the CSS base layer -> global styles around all components */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 102 28% 95%;
+    --foreground: 127 28% 16%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 102 28% 95%;
+    --card-foreground: 127 28% 16%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 102 28% 95%;
+    --popover-foreground: 127 28% 16%;
 
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 127 28% 16%;
+    --primary-foreground: 102 28% 95%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 100 30% 77%;
+    --secondary-foreground: 127 28% 16%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 100 30% 77%;
+    --muted-foreground: 118 17% 51%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 118 17% 51%;
+    --accent-foreground: 127 28% 16%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 0%;
+    --border: 100 25% 73%;
+    --input: 100 25% 73%;
+    --ring: 118 17% 51%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
-  .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-
-    --card: 0 0% 0%;
-    --card-foreground: 0 0% 100%;
-
-    --popover: 0 0% 0%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
-
-    --secondary: 0 0% 9%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 0 0% 9%;
-    --muted-foreground: 0 0% 65%;
-
-    --accent: 0 0% 9%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 100%;
-  }
-
-  @layer base {
-    body {
-      @apply bg-black text-white;
-    }
-    
-    .font-nothing-you-could-do {
-      font-family: var(--font-nothing-you-could-do), cursive;
-    }
+  body {
+    background-color: #F9F9F8;
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 
   .intro-card {
@@ -88,7 +54,6 @@
 
   @media (max-width: 768px) {
     #loom {
-      /* height: 155px; */
       width: 100%;
     }
     iframe {
@@ -111,3 +76,59 @@
 .animate-slide-in-bottom {
   animation: slide-in-bottom 1s ease-in-out;
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fade-up 0.6s ease-out 0.1s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.6s ease-out 0.2s both;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fade-up 0.6s ease-out 0.3s both;
+}
+
+.animate-fade-up-delay-4 {
+  animation: fade-up 0.6s ease-out 0.4s both;
+}
+
+.animate-fade-up-delay-5 {
+  animation: fade-up 0.6s ease-out 0.5s both;
+}
+
+@keyframes orb-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.97); }
+}
+
+@keyframes orb-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-50px, 25px) scale(0.95); }
+  66% { transform: translate(30px, -40px) scale(1.08); }
+}
+
+@keyframes orb-drift-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(25px, 35px) scale(1.04); }
+}
+
+.orb-1 { animation: orb-drift-1 22s ease-in-out infinite; }
+.orb-2 { animation: orb-drift-2 28s ease-in-out infinite; }
+.orb-3 { animation: orb-drift-3 18s ease-in-out infinite; }
